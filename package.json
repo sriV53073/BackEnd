@@ -4,7 +4,7 @@
   "description": "Send email to my email",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node Server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
