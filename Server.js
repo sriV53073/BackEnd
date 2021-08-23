@@ -30,7 +30,7 @@ app.post('/email', (req, res) =>{
       });
 })
 app.get('/', function (req, res) {
-  res.send('GET request to the homepage')
+  res.send('GET request to the homepage1')
   console.log("Hello");
 })
 app.listen(process.env.PORT || 3000, function(){
