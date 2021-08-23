@@ -29,6 +29,10 @@ app.post('/email', (req, res) =>{
         res.end()
       });
 })
+app.get('/', (req,res) =>
+{
+  res.send("Hello");
+})
 app.listen(port, () => {
    console.log(`Your lstining on ${port}`)
 })
