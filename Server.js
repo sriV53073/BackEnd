@@ -2,7 +2,6 @@ const nodemailer = require("nodemailer");
 var express = require('express');
 const app = express();
 var cors = require('cors');
-const port = 5000;
 app.use(express.json());
 app.use(cors()) 
 const transporter = nodemailer.createTransport({
@@ -33,6 +32,4 @@ app.get('/', function (req, res) {
   res.send('GET request to the homepage')
   console.log("Hello");
 })
-app.listen(port, () => {
-   console.log(`Your lstining on ${port}`)
-})
+app.listen(process.env.PORT || 3000)
