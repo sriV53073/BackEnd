@@ -29,9 +29,9 @@ app.post('/email', (req, res) =>{
         res.end()
       });
 })
-app.get('/', (req,res) =>
-{
-  res.send("Hello");
+app.get('/', function (req, res) {
+  res.send('GET request to the homepage')
+  console.log("Hello");
 })
 app.listen(port, () => {
    console.log(`Your lstining on ${port}`)
