@@ -4,9 +4,7 @@ const app = express();
 var cors = require('cors');
 const port = 5000;
 app.use(express.json());
-app.use(cors({
-    origin: 'http://localhost:3000'
-}));
+app.use(cors()) 
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
